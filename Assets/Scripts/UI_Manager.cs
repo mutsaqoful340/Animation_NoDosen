@@ -9,20 +9,25 @@ public class UI_Manager : MonoBehaviour
     // animator1 > popup
     // animator2 > button
 
+    public void PopUpSystemOpen() => StartCoroutine(ShowPupUpCoroutine());
+    public void PopUpSystemClose() => StartCoroutine(HidePupUpCoroutine());
+
     private void Start()
     {
         animator1 = popUp.GetComponent<Animator>();
         animator2 = buttonAnimation.GetComponent<Animator>();
     }
-    public void ShowPupUp()
+    public IEnumerator ShowPupUpCoroutine()
     {
-        animator2.Play("hide");
+        animator2.Play("close");
+        yield return new WaitForSeconds(0.5f);
         animator1.Play("popup");
     }
 
-    public void HidePupUp()
+    public IEnumerator HidePupUpCoroutine()
     {
         animator2.Play("popup");
-        animator1.Play("hide");
+        yield return new WaitForSeconds(0.1f);
+        animator1.Play("close");
     }
 }
