@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 63.29677, g: 79.450035, b: 207.0844, a: 1}
+  m_IndirectSpecularColor: {r: 6420.0454, g: 9055.095, b: 12214.431, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -445,9 +445,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1449773619856698881, guid: 34346c51b5dbbb04591618064390597d, type: 3}
+      propertyPath: SkyMat
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3901351474982769029, guid: 34346c51b5dbbb04591618064390597d, type: 3}
       propertyPath: m_Name
       value: NightSky_CustomHDRi
+      objectReference: {fileID: 0}
+    - target: {fileID: 3901351474982769029, guid: 34346c51b5dbbb04591618064390597d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8105477989036476568, guid: 34346c51b5dbbb04591618064390597d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -959,7 +967,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
