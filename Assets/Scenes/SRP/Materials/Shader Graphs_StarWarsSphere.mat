@@ -50,11 +50,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - FresnelPower: 1.61
-    - _Density: 24.88
+    - FresnelPower: 0.4
+    - _Density: 32.87
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Slim: 2.1
+    - _Slim: 1.14
     - _Speed: 2.2
     m_Colors:
     - FresnelColor: {r: 0.46187997, g: 0.26633143, b: 0.8962264, a: 0}
